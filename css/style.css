@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Italianno&display=swap');
+
+
+body { 
+background-color: blanchedalmond;
+overflow: hidden;
+}
+
+
+.heading {
+    text-align: center;
+    height: 100px;
+    font-family: 'Italianno';
+    font-size: 5rem;
+    animation: ox; 
+ animation-duration: 5s;
+ position: relative;
+}
+
+
+
+ @keyframes ox {
+    0% {right: -1000px;}
+    85% {right: 500px;}
+    100% {right: 0;}
+}
+    
+
+
+.left{
+    width: 30%;
+    display:inline-block;
+
+}
+   .main{
+  margin: 0 auto;
+width: 50%;
+display:inline-block;
+animation: aniBtn;
+animation-duration: 4s;
+animation-delay: 4.5s;
+animation-fill-mode: forwards;
+opacity: 0;
+}
+
+@keyframes aniBtn {
+    0% {opacity: 0;}  /*0-1*/
+100% {opacity: 1;}
+}
+
+   
+
+.right{
+    width: 20%;
+    display:inline-block;    
+}
+
+
+img {
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+  }
+
+#ok{
+margin-left: 90%;
+
+}
+
+
+.buttom {
+    text-align: right;
+    font-family: 'Italianno';
+    font-size: 3rem;
+    
+}
+
+.copyright {
+  
+    font-family: 'East Sea Dokdo';
+    font-size: 3rem;
+    color:white;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+        
+        white-space: nowrap; /* Keeps the content on a single line */
+       opacity: 0;
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 3.5s steps(40, end),
+          blink-caret 2s step-end infinite;
+          animation-delay: 6s;
+          animation-fill-mode: forwards;
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+       0% { width: 0;opacity: 100%; }
+        100% { width: 100%; opacity: 100%;color: black;}
+      }
+      
+      
